@@ -22,6 +22,7 @@ jobs:
     - name: Deploy
       run: |
         cd build/web
+        sed -i "$(($(grep -n "CORE = \[" flutter_service_worker.js | cut -d : -f 1) + 1))d" flutter_service_worker.js
         git init
         git config user.name  "CI"
         git config user.email "flutter-ci@github.com"
