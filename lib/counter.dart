@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:munchkinlevel/stat.dart';
-import 'package:numberpicker/numberpicker.dart';
 import 'package:munchkinlevel/string_extensions.dart';
+import 'package:numberpicker/numberpicker.dart';
 
 class Counter extends StatefulWidget {
   final CounterValueChangeCallback _changeCallback;
@@ -86,8 +84,12 @@ class _CounterState extends State<Counter> {
                           initialValue: _value,
                           minValue: _minValue,
                           maxValue: _maxValue,
-                          textStyle: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
-                          selectedTextStyle: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold, color: Colors.tealAccent),
+                          textStyle: TextStyle(
+                              fontSize: 30.0, fontWeight: FontWeight.bold),
+                          selectedTextStyle: TextStyle(
+                              fontSize: 40.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.tealAccent),
                           onChanged: _handlePickerSelected))
                 ]))));
   }
