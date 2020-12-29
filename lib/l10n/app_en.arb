@@ -1,0 +1,22 @@
+{
+  "level": "level",
+  "@level": {
+    "description": "Level"
+  },
+  "bonus": "bonus",
+  "@bonus": {
+    "description": "Bonus"
+  },
+  "counter_title": "Select your {something}",
+  "@counter_title": {
+    "type": "text",
+    "description": "Title for the counter widget",
+    "placeholders": {
+      "something": {}
+    }
+  },
+  "total": "total",
+  "@total":{
+    "description": "Total"
+  }
+}
